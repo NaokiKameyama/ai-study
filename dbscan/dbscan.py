@@ -26,7 +26,7 @@ clustering = DBSCAN(eps=4.6, min_samples=8).fit(X)
 clustering.labels_
 print("クラスタリングラベル: ", clustering.labels_)
 
-# 各クラスたの点の個数をカウント
+# 各クラスタの点の個数をカウント
 count = collections.Counter(clustering.labels_)
 print("各クラスタの点の個数: ", count)
 
