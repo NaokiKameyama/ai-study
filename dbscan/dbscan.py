@@ -23,7 +23,6 @@ plt.ylabel("Feature 2")
 
 # DBSCANの実行
 clustering = DBSCAN(eps=4.6, min_samples=8).fit(X)
-clustering.labels_
 print("クラスタリングラベル: ", clustering.labels_)
 
 # 各クラスタの点の個数をカウント
